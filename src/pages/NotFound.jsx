@@ -1,8 +1,3 @@
-
-
 export const NotFound = () => {
-  return (
-    <div>Page Not found...</div>
-  )
-}
-
+  return <div className="alert alert-warning">Page Not found...</div>;
+};
