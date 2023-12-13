@@ -1,0 +1,91 @@
+.light-title {
+  color: rgb(68, 147, 216);
+  font-weight: 300;
+}
+
+.para {
+  color: #444;
+  font-size: 0.9rem;
+}
+
+.underlined-title {
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  color: #444;
+  font-weight: lighter;
+}
+
+.underlined-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #3498db, #2ecc71);
+  border-radius: 1px;
+}
+
+.decorated-list li {
+  position: relative;
+  padding-left: 20px;
+  list-style: none;
+  margin-bottom: 0.25rem;
+}
+
+.decorated-list li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #333;
+}
+
+.article-image {
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+.card-img-top {
+  height: 300px;
+  object-fit: cover;
+}
+
+.product-detail .product-image-main img {
+  border-radius: 5px;
+}
+
+.product-detail .product-images img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.product-detail .product-info {
+  padding-top: 20px;
+}
+
+.product-detail .product-description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.product-detail .price {
+  color: #007bff;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.product-detail .stock,
+.product-detail .rating {
+  margin-bottom: 1rem;
+}
+
+.product-detail h2 {
+  margin-bottom: 20px;
+}
