@@ -12,7 +12,15 @@ export const Contact = () => {
   };
 
   return (
-    <section className="container">
+    <section
+      className="container"
+      style={{
+        maxWidth: '600px',
+        margin: '2rem auto',
+        padding: '3rem',
+        boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2)',
+      }}
+    >
       <h2 className="light-title text-secondary">Provide a feedback</h2>
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
@@ -40,7 +48,16 @@ export const Contact = () => {
             onChange={({ target }) => setFeedback(target.value)}
           ></textarea>
         </div>
-        <input type="submit" value="Submit" className="btn btn-primary" />
+        <input
+          type="submit"
+          value="Submit"
+          className="btn mt-3"
+          style={{
+            backgroundColor: 'gray',
+            color: 'white',
+            letterSpacing: '2px',
+          }}
+        />
       </form>
     </section>
   );

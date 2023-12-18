@@ -60,6 +60,20 @@ const SingleProduct = () => {
           <p className="stock">On stock: {product.stock} pcs</p>
           <p>Brand: {product.brand}</p>
           <p>Category: {product.category}</p>
+          <div className="button-group">
+            <a
+              href="/products"
+              className="btn button-pink w-25"
+              style={{
+                backgroundColor: 'gray',
+                color: 'white',
+                fontWeight: 'bold',
+                letterSpacing: '2px',
+              }}
+            >
+              Back
+            </a>
+          </div>
         </div>
       </div>
     </article>

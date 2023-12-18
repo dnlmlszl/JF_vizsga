@@ -9,8 +9,12 @@ export const Product = ({ id, title, description, category, thumbnail }) => {
           <span>{category}</span>
         </div>
         <div className="m-3">
-          <a href={`/products/${id}`} className="btn btn-primary">
-            More details
+          <a
+            href={`/products/${id}`}
+            className="btn"
+            style={{ color: 'gray', marginLeft: '-1rem', letterSpacing: '2px' }}
+          >
+            More details...
           </a>
         </div>
       </div>
